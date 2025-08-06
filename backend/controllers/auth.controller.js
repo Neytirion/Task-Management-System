@@ -24,7 +24,7 @@ export const signUp = async (req, res) => {
       verificationTokenExpiresAt: Date.now() + 24 * 60 * 60 * 1000,
 
     });
-
+//test text
     const token = jwt.sign(
       {id: newUser._id, role: newUser.role},
       process.env.JWT_SECRET,
