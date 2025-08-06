@@ -1,6 +1,7 @@
 import User from '../models/user.model.js';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
+import {generateTokenAndSetCookie} from "../utils/generateTokenAndSetCookie.js";
 
 export const signUp = async (req, res) => {
   try {
@@ -22,22 +23,16 @@ export const signUp = async (req, res) => {
       role,
       verificationToken,
       verificationTokenExpiresAt: Date.now() + 24 * 60 * 60 * 1000,
-
     });
-//test text
-    const token = jwt.sign(
-      {id: newUser._id, role: newUser.role},
-      process.env.JWT_SECRET,
-      {expiresIn: '1d'}
-    );
+
+    generateTokenAndSetCookie(res, newUser._id, newUser.role);
 
     res.status(201).json({
-      token,
+      success: true,
+      message: 'User created successfully',
       user: {
-        id: newUser._id,
-        name: newUser.name,
-        email: newUser.email,
-        role: newUser.role
+        ...newUser._doc,
+        password: undefined,
       }
     });
   } catch (err) {
