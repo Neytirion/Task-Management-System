@@ -5,7 +5,6 @@ export default function LogoutButton() {
 
   const handleLogout = () => {
     localStorage.removeItem('token');
-    setUser(null);
     navigate('/login');
   };
   return (
