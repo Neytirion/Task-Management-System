@@ -167,7 +167,9 @@ export default function TasksPage() {
           </li>
         ))}
       </ul>
-      <LogoutButton/>
+      <div className="mt-6 flex justify-center">
+        <LogoutButton />
+      </div>
     </div>
   );
 }
