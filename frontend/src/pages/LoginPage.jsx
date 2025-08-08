@@ -11,20 +11,13 @@ export default function LoginPage() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', {
-        email,
-        password,
-      });
-
-      login(res.data.token);
+      await login(email, password);
       navigate('/tasks');
     } catch (err) {
       alert('Неправильный email или пароль');
     }
   };
-
 
 
   return (

@@ -5,12 +5,16 @@ import {db} from "./config/db.js";
 import authRoutes from "./routes/auth.routes.js";
 import taskRoutes from "./routes/task.routes.js";
 import adminRoutes from "./routes/admin.routes.js";
+import cookieParser from "cookie-parser";
 
 dotenv.config();
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:5173',
+  credentials: true,
+}));
 app.use(express.json());
-
+app.use(cookieParser());
 
 app.use('/api/auth', authRoutes);
 app.use('/api/tasks', taskRoutes);

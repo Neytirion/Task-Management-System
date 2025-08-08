@@ -2,31 +2,21 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
 import LogoutButton from "../components/LogoutButton.jsx";
+import { useAuth } from '../context/AuthContext.jsx';
 
 export default function TasksPage() {
   const [tasks, setTasks] = useState([]);
   const [title, setTitle] = useState('');
   const [editId, setEditId] = useState(null);
   const [editTitle, setEditTitle] = useState('');
-  const navigate = useNavigate();
 
-  const token = localStorage.getItem('token');
-  const authHeader = { headers: { Authorization: `Bearer ${token}` } };
-
-  // Получаем роль из токена
-  let role = null;
-  if (token) {
-    try {
-      const payload = JSON.parse(atob(token.split('.')[1]));
-      role = payload.role;
-    } catch {
-      role = null;
-    }
-  }
+  const { role } = useAuth();
 
   const fetchTasks = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/tasks', authHeader);
+      const res = await axios.get('http://localhost:5000/api/tasks', {
+        withCredentials: true,
+      });
       setTasks(res.data);
     } catch (err) {
       alert('Ошибка загрузки задач');
@@ -43,7 +33,9 @@ export default function TasksPage() {
       const res = await axios.post(
         'http://localhost:5000/api/tasks',
         { title },
-        authHeader
+        {
+          withCredentials: true,
+        }
       );
       setTasks([...tasks, res.data]);
       setTitle('');
@@ -54,7 +46,9 @@ export default function TasksPage() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/tasks/${id}`, authHeader);
+      await axios.delete(`http://localhost:5000/api/tasks/${id}`, {
+        withCredentials: true,
+      });
       setTasks(tasks.filter((t) => t._id !== id));
     } catch {
       alert('Ошибка удаления задачи');
@@ -76,7 +70,9 @@ export default function TasksPage() {
       const res = await axios.put(
         `http://localhost:5000/api/tasks/${id}`,
         { title: editTitle },
-        authHeader
+        {
+          withCredentials: true,
+        }
       );
       setTasks(tasks.map(t => (t._id === id ? res.data : t)));
       cancelEdit();

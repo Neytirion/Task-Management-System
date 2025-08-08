@@ -10,7 +10,9 @@ export default function AdminPage() {
 
   const fetchUsers = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/admin/users', authHeader);
+      const res = await axios.get('http://localhost:5000/api/admin/users', {
+        withCredentials: true,
+      });
       setUsersData(res.data);
     } catch (err) {
       alert('Ошибка загрузки данных админа');
@@ -24,7 +26,9 @@ export default function AdminPage() {
   const handleDeleteUser = async (id) => {
     if (!window.confirm('Удалить пользователя и все его задачи?')) return;
     try {
-      await axios.delete(`http://localhost:5000/api/admin/users/${id}`, authHeader);
+      await axios.delete(`http://localhost:5000/api/admin/users/${id}`, {
+        withCredentials: true,
+      });
       setUsersData(usersData.filter(u => u.user._id !== id));
     } catch {
       alert('Ошибка удаления пользователя');
