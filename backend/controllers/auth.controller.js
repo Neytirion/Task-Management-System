@@ -31,7 +31,7 @@ export const signUp = async (req, res) => {
 
     generateTokenAndSetCookie(res, newUser._id, newUser.role);
 
-    await sendVerificationEmail(newUser.email, verificationToken);
+    //await sendVerificationEmail(newUser.email, verificationToken);
 
     res.status(201).json({
       success: true,
@@ -73,15 +73,24 @@ export const login = async (req, res) => {
   }
 };
 
-export const verifyEmail = async(req, res) => {
+export const logout = async (req, res) => {
+  try {
+    res.clearCookie('token');
+    res.json({message: 'Logged out successfully'});
+  } catch (err) {
+    res.status(500).json({message: 'Server error'});
+  }
+}
+
+export const verifyEmail = async (req, res) => {
   const {code} = req.body;
-  try{
+  try {
     const user = await User.findOne({
       verificationToken: code,
       verificationTokenExpiresAt: {$gt: Date.now()}
     });
 
-    if(!user){
+    if (!user) {
       return res.status(400).json({message: 'Invalid verification code'});
     }
     user.isVerified = true;
@@ -100,7 +109,8 @@ export const verifyEmail = async(req, res) => {
       },
     });
 
-  }catch(error){
-
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({message: 'Server error'});
   }
 }
