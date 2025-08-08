@@ -5,8 +5,6 @@ import BackButton from "../components/BackButton.jsx";
 
 export default function AdminPage() {
   const [usersData, setUsersData] = useState([]);
-  const token = localStorage.getItem('token');
-  const authHeader = { headers: { Authorization: `Bearer ${token}` } };
 
   const fetchUsers = async () => {
     try {
