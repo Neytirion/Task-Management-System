@@ -20,7 +20,7 @@ Other: dotenv, cookie-parser, bcryptjs, cors
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone git@github.com:Parcival003/Task-Management-System.git
+git clone <repository-link>
 ```
 
 ### 2️⃣ Backend setup
