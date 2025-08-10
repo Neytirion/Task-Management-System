@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3571111a-7a45-4a17-b2f0-bb760309c8a2" name="Changes" comment="Implemented Cookies">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="3571111a-7a45-4a17-b2f0-bb760309c8a2" name="Changes" comment="Before load to repositories">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +99,7 @@
       <workItem from="1754669622113" duration="5315000" />
       <workItem from="1754821426540" duration="29000" />
       <workItem from="1754822225184" duration="1416000" />
-      <workItem from="1754833808760" duration="1051000" />
+      <workItem from="1754833808760" duration="1468000" />
     </task>
     <task id="LOCAL-00001" summary="before verify">
       <option name="closed" value="true" />
@@ -197,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754672806648</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Before load to repositories">
+      <option name="closed" value="true" />
+      <created>1754835174495</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1754835174495</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +255,7 @@
     <MESSAGE value="added new token generator and set cookie function" />
     <MESSAGE value="test texts" />
     <MESSAGE value="Implemented Cookies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Cookies" />
+    <MESSAGE value="Before load to repositories" />
+    <option name="LAST_COMMIT_MESSAGE" value="Before load to repositories" />
   </component>
 </project>
