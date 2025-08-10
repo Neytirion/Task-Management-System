@@ -18,8 +18,8 @@ A pet project built to demonstrate the usage of learned full-stack development c
 
 ## ⚙️ Installation & Run
 ### 1️⃣ Clone the repository
-```bash
-git clone <your-repo-url>
+
+git clone git@github.com:Parcival003/Task-Management-System.git
 ````
 
 ### 2️⃣ Backend setup
