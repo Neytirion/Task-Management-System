@@ -15,12 +15,13 @@ A pet project built to demonstrate the usage of learned full-stack development c
 **Backend:** Node.js, Express.js, MongoDB, Mongoose  
 **Auth:** JWT, HTTP-only cookies, role-based middleware  
 **Other:** dotenv, cookie-parser, bcryptjs, cors  
-
-## ⚙️ Installation & Run
-### 1️⃣ Clone the repository
-
-git clone git@github.com:Parcival003/Task-Management-System.git
 ````
+### ⚙️ Installation & Run
+
+### 1️⃣ Clone the repository
+```bash
+git clone git@github.com:Parcival003/Task-Management-System.git
+```
 
 ### 2️⃣ Backend setup
 
