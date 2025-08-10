@@ -3,18 +3,18 @@
 A pet project built to demonstrate the usage of learned full-stack development concepts, including authentication, role-based access control, and CRUD operations for tasks.
 
 ## 🚀 Features
-- User registration, login, and logout with **HTTP-only cookies** for JWT storage
-- Role-based access control (**user** / **admin**)
+- User registration, login, and logout with HTTP-only cookies for JWT storage
+- Role-based access control (user / admin)
 - CRUD operations for tasks (create, read, update, delete)
 - Admin panel to manage users and their tasks
 - Protected API routes and frontend pages
-- Responsive UI with **TailwindCSS**
+- Responsive UI with TailwindCSS
 
 ## 🛠 Technologies Used
-**Frontend:** React, React Router, Axios, TailwindCSS  
-**Backend:** Node.js, Express.js, MongoDB, Mongoose  
-**Auth:** JWT, HTTP-only cookies, role-based middleware  
-**Other:** dotenv, cookie-parser, bcryptjs, cors  
+Frontend: React, React Router, Axios, TailwindCSS  
+Backend: Node.js, Express.js, MongoDB, Mongoose  
+Auth: JWT, HTTP-only cookies, role-based middleware  
+Other: dotenv, cookie-parser, bcryptjs, cors  
 ````
 ### ⚙️ Installation & Run
 
