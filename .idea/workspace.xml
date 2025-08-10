@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3571111a-7a45-4a17-b2f0-bb760309c8a2" name="Changes" comment="Implemented Cookies">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="e81eb6050e5a48ab4e3925fb07fa424fe7ddca7f" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Parcival003"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:Parcival003/Task-Management-System.git",
+    "accountId": "b806f324-3b6f-4225-8aed-ae135f8c30d2"
+  }
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="30n1EAp9wpXjPgMnNdnKD6HzwY3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Notification.DisplayName-DoNotAsk-Branch Context group": "Branch context switched",
+    "Notification.DoNotAsk-Branch Context group": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "services-branch",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/murza/WebstormProjects/task-list",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2025.1.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\murza\WebstormProjects\task-list\frontend\src\pages" />
+      <recent name="C:\Users\murza\WebstormProjects\task-list\frontend" />
+      <recent name="C:\Users\murza\WebstormProjects\task-list\backend\middlewares" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\murza\WebstormProjects\task-list" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-WS-251.26094.131" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3571111a-7a45-4a17-b2f0-bb760309c8a2" name="Changes" comment="" />
+      <created>1754248409023</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1754248409023</updated>
+      <workItem from="1754248410107" duration="6585000" />
+      <workItem from="1754304156408" duration="11780000" />
+      <workItem from="1754395090334" duration="9735000" />
+      <workItem from="1754474549220" duration="24122000" />
+      <workItem from="1754565175859" duration="87000" />
+      <workItem from="1754566415075" duration="13378000" />
+      <workItem from="1754597679020" duration="4770000" />
+      <workItem from="1754653314842" duration="4794000" />
+      <workItem from="1754669622113" duration="5315000" />
+      <workItem from="1754821426540" duration="29000" />
+      <workItem from="1754822225184" duration="1416000" />
+      <workItem from="1754833808760" duration="1051000" />
+    </task>
+    <task id="LOCAL-00001" summary="before verify">
+      <option name="closed" value="true" />
+      <created>1754488840387</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1754488840387</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add new param to user.model.js and add this param to auth.controller.js in newUser">
+      <option name="closed" value="true" />
+      <created>1754490882944</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1754490882944</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test">
+      <option name="closed" value="true" />
+      <created>1754491731971</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1754491731971</updated>
+    </task>
+    <task id="LOCAL-00004" summary="test text">
+      <option name="closed" value="true" />
+      <created>1754493007134</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1754493007134</updated>
+    </task>
+    <task id="LOCAL-00005" summary="test text">
+      <option name="closed" value="true" />
+      <created>1754493160023</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1754493160023</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add new token generator and set cookie function">
+      <option name="closed" value="true" />
+      <created>1754494893554</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1754494893554</updated>
+    </task>
+    <task id="LOCAL-00007" summary="test branch">
+      <option name="closed" value="true" />
+      <created>1754495013204</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1754495013204</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add verification in backend">
+      <option name="closed" value="true" />
+      <created>1754574577401</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1754574577401</updated>
+    </task>
+    <task id="LOCAL-00009" summary="almost complete verefication">
+      <option name="closed" value="true" />
+      <created>1754653360771</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1754653360771</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add AuthContext.jsx">
+      <option name="closed" value="true" />
+      <created>1754656268083</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1754656268083</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Implemented Cookies">
+      <option name="closed" value="true" />
+      <created>1754672436950</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1754672436950</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Implemented Cookies">
+      <option name="closed" value="true" />
+      <created>1754672806648</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1754672806648</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="before verify" />
+    <MESSAGE value="Add new param to user.model.js and add this param to auth.controller.js in newUser" />
+    <MESSAGE value="test" />
+    <MESSAGE value="test texts" />
+    <MESSAGE value="test branch" />
+    <MESSAGE value="add verification in backend" />
+    <MESSAGE value="almost complete verefication" />
+    <MESSAGE value="Added AuthContext.jsx" />
+    <MESSAGE value="added new token generator and set cookie function" />
+    <MESSAGE value="Added AuthContext.jsx" />
+    <MESSAGE value="added new token generator and set cookie function" />
+    <MESSAGE value="added new token generator and set cookie function" />
+    <MESSAGE value="test texts" />
+    <MESSAGE value="Implemented Cookies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Cookies" />
+  </component>
+</project>
