@@ -84,8 +84,6 @@ export default function TasksPage() {
   return (
     <div className="max-w-xl mx-auto p-4">
       <h2 className="text-2xl font-bold mb-4 text-center">Мои задачи</h2>
-
-      {/* Кнопка перехода в админку */}
       {role === 'admin' && (
         <div className="mb-4 text-center">
           <Link
