@@ -40,7 +40,7 @@ export default function EditableTaskList({ tasks, onTaskUpdate, onTaskDelete }) 
             </>
           ) : (
             <>
-              <span>{task.title} - {task.status}</span>
+              <span>{task.title}</span>
               <div>
                 <button
                   onClick={() => startEdit(task)}
