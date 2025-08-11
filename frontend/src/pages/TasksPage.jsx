@@ -1,15 +1,13 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import LogoutButton from "../components/LogoutButton.jsx";
 import { useAuth } from '../context/AuthContext.jsx';
+import TaskList from "../components/TaskList.jsx";
 
 export default function TasksPage() {
   const [tasks, setTasks] = useState([]);
   const [title, setTitle] = useState('');
-  const [editId, setEditId] = useState(null);
-  const [editTitle, setEditTitle] = useState('');
-
   const { role } = useAuth();
 
   const fetchTasks = async () => {
@@ -19,6 +17,7 @@ export default function TasksPage() {
       });
       setTasks(res.data);
     } catch (err) {
+      console.error(err);
       alert('Ошибка загрузки задач');
     }
   };
@@ -33,9 +32,7 @@ export default function TasksPage() {
       const res = await axios.post(
         'http://localhost:5000/api/tasks',
         { title },
-        {
-          withCredentials: true,
-        }
+        { withCredentials: true }
       );
       setTasks([...tasks, res.data]);
       setTitle('');
@@ -55,27 +52,14 @@ export default function TasksPage() {
     }
   };
 
-  const startEdit = (task) => {
-    setEditId(task._id);
-    setEditTitle(task.title);
-  };
-
-  const cancelEdit = () => {
-    setEditId(null);
-    setEditTitle('');
-  };
-
-  const saveEdit = async (id) => {
+  const handleEditSave = async (id, newTitle) => {
     try {
       const res = await axios.put(
         `http://localhost:5000/api/tasks/${id}`,
-        { title: editTitle },
-        {
-          withCredentials: true,
-        }
+        { title: newTitle },
+        { withCredentials: true }
       );
-      setTasks(tasks.map(t => (t._id === id ? res.data : t)));
-      cancelEdit();
+      setTasks(tasks.map((t) => (t._id === id ? res.data : t)));
     } catch {
       alert('Ошибка сохранения');
     }
@@ -84,12 +68,10 @@ export default function TasksPage() {
   return (
     <div className="max-w-xl mx-auto p-4">
       <h2 className="text-2xl font-bold mb-4 text-center">Мои задачи</h2>
+
       {role === 'admin' && (
         <div className="mb-4 text-center">
-          <Link
-            to="/admin"
-            className="text-blue-600 hover:underline"
-          >
+          <Link to="/admin" className="text-blue-600 hover:underline">
             Перейти в админ-панель
           </Link>
         </div>
@@ -112,55 +94,8 @@ export default function TasksPage() {
         </button>
       </form>
 
-      <ul>
-        {tasks.map((task) => (
-          <li
-            key={task._id}
-            className="flex items-center justify-between mb-2 border-b border-gray-200 pb-2"
-          >
-            {editId === task._id ? (
-              <>
-                <input
-                  type="text"
-                  value={editTitle}
-                  onChange={(e) => setEditTitle(e.target.value)}
-                  className="flex-grow border border-gray-300 rounded px-2 py-1"
-                />
-                <button
-                  onClick={() => saveEdit(task._id)}
-                  className="ml-2 text-green-600 hover:text-green-800"
-                >
-                  Сохранить
-                </button>
-                <button
-                  onClick={cancelEdit}
-                  className="ml-2 text-red-600 hover:text-red-800"
-                >
-                  Отмена
-                </button>
-              </>
-            ) : (
-              <>
-                <span>{task.title}</span>
-                <div>
-                  <button
-                    onClick={() => startEdit(task)}
-                    className="mr-2 text-yellow-500 hover:text-yellow-700"
-                  >
-                    ✏️
-                  </button>
-                  <button
-                    onClick={() => handleDelete(task._id)}
-                    className="text-red-500 hover:text-red-700"
-                  >
-                    🗑️
-                  </button>
-                </div>
-              </>
-            )}
-          </li>
-        ))}
-      </ul>
+      <TaskList tasks={tasks} onDelete={handleDelete} onEditSave={handleEditSave} />
+
       <div className="mt-6 flex justify-center">
         <LogoutButton />
       </div>
