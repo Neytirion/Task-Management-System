@@ -19,7 +19,7 @@ export default function RegisterPage() {
       alert('Регистрация прошла успешно! Войдите в систему.');
       navigate('/login');
     } catch (err) {
-      console.error(err); // <-- это выведет точную ошибку в консоль
+      console.error(err);
       alert('Ошибка регистрации: ' + (err.response?.data?.message || err.message));
     }
   };

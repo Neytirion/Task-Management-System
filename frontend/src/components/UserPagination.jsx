@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Pagination = ({ totalPosts, postsPerPage, currentPage, onPageChange }) => {
+const UserPagination = ({ totalPosts, postsPerPage, currentPage, onPageChange }) => {
   const pages = [];
   for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
     pages.push(i);
@@ -22,4 +22,4 @@ const Pagination = ({ totalPosts, postsPerPage, currentPage, onPageChange }) => 
     </div>
   );
 };
-export default Pagination
+export default UserPagination
